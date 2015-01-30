@@ -16,10 +16,7 @@ int main()
     log_init("./conf", "log");
     sfd::parse_thread_start();
     sfd::parse_thread_join();
-    sfd::parse_sys_conf_init("./conf", "parser");
-    sfd::SfdHtmlParse htmlParse;
-    htmlParse.initSfdHtmlParse(sfd::g_parse_sys_conf);
-    htmlParse.run();
+
     log_close();
 
     return 0;
